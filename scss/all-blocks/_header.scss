@@ -1,0 +1,75 @@
+.header {
+    
+    &__container {
+        padding-top: 34px;
+        padding-left: 169px;
+        padding-right: 165px;
+        padding-bottom: 33px;
+        display: flex;
+        align-items: center;
+    }
+    
+    &__left{
+        display: flex;
+        align-items: center;
+        margin-right: 548px;
+    }
+    
+    &__logo {
+        width:107px;
+        height: 33px;
+        margin-right: 58px;
+    }
+    
+    
+    &__nav-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    &__nav-link {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dimgrey;
+        margin-right: 32px;
+        
+        &:hover{
+            color:$yellow;
+        }
+    }
+    
+    &__nav-link-active{
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color:$dimgrey;
+        margin-right: 0;
+        
+        &:hover{
+            color:$yellow;
+        }
+        
+    }
+    
+    &__link {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: $yellow;
+        padding: 14px 39px;
+        
+        &:hover{
+            color: $yellow;
+            background-color: #FFFFFF;
+
+            
+        }
+        
+    }
+    
+}

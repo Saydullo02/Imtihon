@@ -341,20 +341,20 @@ template {
   display: none;
 }
 
-/* barlow-regular - latin */
+/* space-mono-700 - latin */
 @font-face {
-  font-family: 'Barlow';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/barlow-v5-latin-regular.woff2") format("woff2"), url("../fonts/barlow-v5-latin-regular.woff") format("woff");
-}
-
-/* barlow-700 - latin */
-@font-face {
-  font-family: 'Barlow';
+  font-family: 'Space Mono';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/barlow-v5-latin-700.woff2") format("woff2"), url("../fonts/barlow-v5-latin-700.woff") format("woff");
+  src: url("../fonts/space-mono-v10-latin-700.woff2") format("woff2"), url("../fonts/space-mono-v10-latin-700.woff") format("woff");
+}
+
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend-deca-v15-latin-regular.woff2") format("woff2"), url("../fonts/lexend-deca-v15-latin-regular.woff") format("woff");
 }
 
 html {
@@ -370,7 +370,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Barlow", "Fraunces", "Arial", "sans-serif";
+  font-family: "Space Mono", "Lexend Deca", "monospace", "sans-serif";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,5 +410,337 @@ main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.container {
+  max-width: 1480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header__container {
+  padding-top: 34px;
+  padding-left: 169px;
+  padding-right: 165px;
+  padding-bottom: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 548px;
+}
+
+.header__logo {
+  width: 107px;
+  height: 33px;
+  margin-right: 58px;
+}
+
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__nav-link {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin-right: 32px;
+}
+
+.header__nav-link:hover {
+  color: #FCB72B;
+}
+
+.header__nav-link-active {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin-right: 0;
+}
+
+.header__nav-link-active:hover {
+  color: #FCB72B;
+}
+
+.header__link {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #FCB72B;
+  padding: 14px 39px;
+}
+
+.header__link:hover {
+  color: #FCB72B;
+  background-color: #FFFFFF;
+}
+
+.hero__container {
+  background-image: url("./../image/hero-bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 160px;
+}
+
+.hero__left {
+  position: relative;
+}
+
+.hero__left::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 415.5px;
+  top: 0;
+  left: 0;
+  background-image: url("./../../image/hero-left-line.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: calc(100% - 536px) 347px;
+  padding-left: 50%;
+  padding-bottom: 368px;
+}
+
+.hero__heading {
+  width: 500px;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  margin: 0;
+  padding-top: 153px;
+  margin-left: 165px;
+  margin-bottom: 40px;
+}
+
+.hero__text {
+  width: 405px;
+  font-family: 'Lexend Deca', 'sans-serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  overflow: auto;
+  margin: 0;
+  margin-left: 260px;
+  margin-bottom: 40px;
+}
+
+.hero__link {
+  display: inline-block;
+  font-family: 'Space Mono', 'monospace';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #FCB72B;
+  padding: 14px 39px;
+  color: #FFFFFF;
+  margin-left: 260px;
+  margin-bottom: 152px;
+}
+
+.hero__link:hover {
+  color: #FCB72B;
+  background: url(Image.png);
+}
+
+.hero__right {
+  position: relative;
+}
+
+.hero__right::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 415px;
+  height: 138px;
+  background-image: url("./../image/hero-right-strelka.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 205px) 18px;
+  background-size: contain;
+  padding-right: 288px;
+  padding-bottom: 18px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: url("./../image/hero-bg-img@2x.jpg");
+  }
+}
+
+.product__container {
+  padding-top: 30px;
+  padding-left: 165px;
+  padding-right: 419px;
+  margin-bottom: 200px;
+}
+
+.product__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__item {
+  margin-right: 32px;
+}
+
+.product__left {
+  position: relative;
+}
+
+.product__left::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 204px;
+  height: 16px;
+  background-color: #E5ECF4;
+  -webkit-transform: translateX(-165px);
+          transform: translateX(-165px);
+  z-index: 1;
+}
+
+.product__left::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 96px;
+  height: 96px;
+  background-image: url("./../image/product-img-1.svg");
+  background-repeat: no-repeat;
+  -webkit-transform: translateY(-47px);
+          transform: translateY(-47px);
+  background-size: contain;
+  z-index: 3;
+}
+
+.product__middle {
+  position: relative;
+}
+
+.product__middle::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 329px;
+  height: 16px;
+  background-color: #E5ECF4;
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  z-index: 1;
+}
+
+.product__middle::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 96px;
+  height: 96px;
+  background-image: url("./../image/product-img-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translateY(-47px);
+          transform: translateY(-47px);
+  z-index: 3;
+}
+
+.product__right {
+  position: relative;
+}
+
+.product__right::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 330px;
+  height: 16px;
+  background-color: #E5ECF4;
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  z-index: 1;
+}
+
+.product__right::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 96px;
+  height: 96px;
+  background-image: url("./../image/product-img-3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translateY(-47px);
+          transform: translateY(-47px);
+  z-index: 3;
+}
+
+.product__title {
+  font-family: 'Space Mono', 'monospace';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  padding-top: 87px;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.product__text {
+  min-width: 350px;
+  font-family: 'Lexend Deca', 'sans-serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
