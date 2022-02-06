@@ -1,6 +1,8 @@
 .hero {
     
     &__container {
+        max-width: 1440px;
+        min-height: 650px;
         background-image: url('./../image/hero-bg-img.png');
         background-repeat: no-repeat;
         background-size: cover;

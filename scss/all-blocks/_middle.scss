@@ -1,21 +1,14 @@
 .middle {
     
     &__container {
-        padding-left: 165px;
-        margin-bottom: 155px;
+        margin-left: 145px;
     }
     
     &__top{
         display: flex;
         align-items: center;
+        margin-bottom: 155px;
         
-    }
-    
-    
-    &__left {
-        width: 445px;
-        min-height: 313px;
-        margin-right: 90px;
     }
     
     &__heading {
@@ -31,6 +24,7 @@
     }
     
     &__text {
+        width: 445px;
         font-family: 'Lexend Deca', 'sans-serif';
         font-style: normal;
         font-weight: normal;
@@ -68,7 +62,6 @@
         
         &::before{
             position: absolute;
-            display: inline-block;
             content: "";
             width: 734px;
             height: 150px;
@@ -78,18 +71,17 @@
             transform: translate(-61px, 348px);
             
         }
-
+        
         &::after{
             position: absolute;
-            display: inline-block;
             content: "";
             width: 445px;
             height: 445px;
             background-image: url("./../../image/middle-oval.svg");
             background-repeat: no-repeat;
             background-size: contain;
-            transform: translateX(64px);
-
+            background-position: calc(25px + 228px ;
+            
         }
     }
     
@@ -97,6 +89,88 @@
         width: 445px;
         height: 445px;
         border-radius: 50%;
-        object-fit: cover;
+        object-fit: contain;
+        object-position: center;
+    }
+    
+    
+    &__list {
+        display: column;
+    }
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 160px ;
+    }
+    
+    &__item2{
+        display: flex;  
+        align-items: center;
+        flex-direction: row-reverse; 
+    }
+    
+    &__image {
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+        object-fit: contain;
+        object-position: center;
+    }
+    
+    &__top-list1 {
+        margin-left: 220px;
+    }
+    
+    &__bottom-list2{
+        margin-right: 220px;
+    }
+    
+    
+    &__title3{
+        font-family: 'Space Mono', 'sans-serif';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: $darknavy;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+    
+    &__text3 {
+        width: 445px;
+        font-family: 'Lexend Deca', 'sans-serif';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dimgrey;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    
+    &__link3 {
+        display: inline-block;
+        min-width: 180px;
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: $white;
+        padding: 14px 43px;
+        background-color: $yellow;
+        
+        &:hover{
+            color: $yellow;
+            background-color: $white;
+            
+        }
     }
 }
+
+
+
