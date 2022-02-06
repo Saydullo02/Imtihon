@@ -57,35 +57,55 @@
     
     &__right {
         width: 747px;
-        height: 498px;
+        height:auto;
         position: relative;
         
-        &::before{
-            position: absolute;
-            content: "";
-            width: 734px;
-            height: 150px;
-            background-image: url("./../image/right-strelka.svg"),;
-            background-repeat: no-repeat;
-            background-size: contain;
-            transform: translate(-61px, 348px);
+        // &::before{
+        //     position: absolute;
+        //     content: "";
+        //     width: 650px;
+        //     height: 150px;
+        //     background-image: url("./../image/right-strelka.svg"),;
+        //     background-repeat: no-repeat;
+        //     background-size: contain;
+        //     transform: translate(-61px, 348px);
             
-        }
+        // }
         
-        &::after{
-            position: absolute;
-            content: "";
-            width: 445px;
-            height: 445px;
-            background-image: url("./../../image/middle-oval.svg");
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: calc(25px + 228px ;
+        // &::after{
+        //     position: absolute;
+        //     content: "";
+        //     width: 445px;
+        //     height: 445px;
+        //     background-image: url("./../../image/middle-oval.svg");
+        //     background-repeat: no-repeat;
+
             
-        }
+        // }
+    }
+
+    &__bottom{
+        width: 747px;
+        height: auto;
     }
     
     &__right-image {
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    &__left-image{
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    &__bottom-image{
         width: 445px;
         height: 445px;
         border-radius: 50%;
@@ -108,6 +128,7 @@
         display: flex;  
         align-items: center;
         flex-direction: row-reverse; 
+        margin-bottom: 178px;
     }
     
     &__image {
@@ -125,51 +146,9 @@
     &__bottom-list2{
         margin-right: 220px;
     }
-    
-    
-    &__title3{
-        font-family: 'Space Mono', 'sans-serif';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 48px;
-        letter-spacing: -2.14286px;
-        color: $darknavy;
-        margin: 0;
-        margin-bottom: 24px;
-    }
-    
-    &__text3 {
-        width: 445px;
-        font-family: 'Lexend Deca', 'sans-serif';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 25px;
-        color: $dimgrey;
-        margin: 0;
-        margin-bottom: 40px;
-    }
-    
-    &__link3 {
-        display: inline-block;
-        min-width: 180px;
-        font-family: Space Mono;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 25px;
-        text-align: center;
-        color: $white;
-        padding: 14px 43px;
-        background-color: $yellow;
-        
-        &:hover{
-            color: $yellow;
-            background-color: $white;
-            
-        }
-    }
+
+   
+
 }
 
 

@@ -1,0 +1,121 @@
+
+.element {
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        padding-left: 145px;
+        padding-top: 102px;
+        padding-bottom: 102px;
+        background-color: #495567;
+    }
+    
+    &__heading {
+        width: 415px;
+        font-family: 'Space Mono', 'sans-serif';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px; 
+        color: $white;
+        margin: 0;
+        margin-right: 336px;
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__item1 {
+        display: flex;
+        background-color: $white;
+        margin-right: 18px;
+        
+    }
+    
+    &__item2{
+        display: flex;
+        align-items: center;
+        background-color: $white;
+    }
+    
+    &__link {
+        padding-left: 16px;
+    }
+    
+    
+    &__element-img{
+        width: 24px;
+        height: 28px;
+        padding-top: 14px;
+        object-fit: contain;
+        object-position: center;
+        align-items: center;
+    }
+    
+    &__wrapper-apple {
+        padding-top: 9px;
+        padding-right: 16px;
+        padding-left: 52px;
+        padding-bottom: 9px;
+        
+    }
+    
+    &__text-apple {
+        font-family: 'Space Mono', 'sans-serif';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px; 
+        color: #495567;
+        margin: 0;  
+        
+        
+    }
+    
+    &__heading-apple {
+        font-family:'Space Mono', 'sans-serif';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        color: #495567;
+        margin: 0;
+        padding-right: 15px;
+    }
+    
+    &__wrapper-play {
+        padding-top: 9px;
+        padding-right: 16px;
+        padding-left: 52px;
+        padding-bottom: 9px;
+    }
+    
+    &__text-play {
+        font-family: 'Space Mono', 'sans-serif';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px; 
+        color: #495567;
+        margin: 0;
+    }
+    
+    &__heading-google {
+        font-family:'Space Mono', 'sans-serif';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        color: #495567;
+        margin: 0;
+        padding-right: 15px;
+    }
+}
+

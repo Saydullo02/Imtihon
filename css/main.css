@@ -807,34 +807,36 @@ main {
 
 .middle__right {
   width: 747px;
-  height: 498px;
+  height: auto;
   position: relative;
 }
 
-.middle__right::before {
-  position: absolute;
-  content: "";
-  width: 734px;
-  height: 150px;
-  background-image: url("./../image/right-strelka.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  -webkit-transform: translate(-61px, 348px);
-          transform: translate(-61px, 348px);
-}
-
-.middle__right::after {
-  position: absolute;
-  content: "";
-  width: 445px;
-  height: 445px;
-  background-image: url("./../../image/middle-oval.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: calc(25px + 228px);
+.middle__bottom {
+  width: 747px;
+  height: auto;
 }
 
 .middle__right-image {
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.middle__left-image {
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.middle__bottom-image {
   width: 445px;
   height: 445px;
   border-radius: 50%;
@@ -869,6 +871,7 @@ main {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  margin-bottom: 178px;
 }
 
 .middle__image {
@@ -889,46 +892,215 @@ main {
   margin-right: 220px;
 }
 
-.middle__title3 {
+.element__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 145px;
+  padding-top: 102px;
+  padding-bottom: 102px;
+  background-color: #495567;
+}
+
+.element__heading {
+  width: 415px;
   font-family: 'Space Mono', 'sans-serif';
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -2.14286px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-right: 336px;
+}
+
+.element__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.element__item1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  margin-right: 18px;
+}
+
+.element__item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+}
+
+.element__link {
+  padding-left: 16px;
+}
+
+.element__element-img {
+  width: 24px;
+  height: 28px;
+  padding-top: 14px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.element__wrapper-apple {
+  padding-top: 9px;
+  padding-right: 16px;
+  padding-left: 52px;
+  padding-bottom: 9px;
+}
+
+.element__text-apple {
+  font-family: 'Space Mono', 'sans-serif';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -0.446429px;
   color: #495567;
   margin: 0;
-  margin-bottom: 24px;
 }
 
-.middle__text3 {
-  width: 445px;
-  font-family: 'Lexend Deca', 'sans-serif';
+.element__heading-apple {
+  font-family: 'Space Mono', 'sans-serif';
   font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 25px;
-  color: #939CAA;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.892857px;
+  color: #495567;
   margin: 0;
-  margin-bottom: 40px;
+  padding-right: 15px;
 }
 
-.middle__link3 {
-  display: inline-block;
-  min-width: 180px;
-  font-family: Space Mono;
+.element__wrapper-play {
+  padding-top: 9px;
+  padding-right: 16px;
+  padding-left: 52px;
+  padding-bottom: 9px;
+}
+
+.element__text-play {
+  font-family: 'Space Mono', 'sans-serif';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -0.446429px;
+  color: #495567;
+  margin: 0;
+}
+
+.element__heading-google {
+  font-family: 'Space Mono', 'sans-serif';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.892857px;
+  color: #495567;
+  margin: 0;
+  padding-right: 15px;
+}
+
+.footer__container {
+  width: 100%;
+  background-color: #333A44;
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 168px;
+  padding-top: 35px;
+  padding-bottom: 32px;
+}
+
+.footer__left-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__left-list {
+  margin-left: 58px;
+}
+
+.footer__left-link {
+  font-family: 'Space Mono', 'monospace';
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
   line-height: 25px;
-  text-align: center;
-  color: #FFFFFF;
-  padding: 14px 43px;
-  background-color: #FCB72B;
+  color: #939CAA;
+  margin-right: 32px;
 }
 
-.middle__link3:hover {
+.footer__left-link:hover {
   color: #FCB72B;
-  background-color: #FFFFFF;
+}
+
+.footer__right-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 165px;
+}
+
+.footer__right-link {
+  margin-left: 24px;
+}
+
+.footer__right-image {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 /*# sourceMappingURL=main.css.map */
