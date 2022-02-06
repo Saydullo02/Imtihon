@@ -431,6 +431,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 999999;
 }
 
 .header__left {
@@ -528,7 +529,7 @@ main {
   background-size: contain;
   background-position: calc(100% - 536px) 347px;
   padding-left: 50%;
-  padding-bottom: 368px;
+  padding-bottom: 364px;
 }
 
 .hero__heading {
@@ -592,7 +593,8 @@ main {
   height: 138px;
   background-image: url("./../image/hero-right-strelka.svg");
   background-repeat: no-repeat;
-  background-position: calc(100% - 205px) 18px;
+  -webkit-transform: translate(35px, 25px);
+          transform: translate(35px, 25px);
   background-size: contain;
   padding-right: 288px;
   padding-bottom: 18px;
@@ -742,5 +744,107 @@ main {
   line-height: 25px;
   color: #939CAA;
   margin: 0;
+}
+
+.middle__container {
+  padding-left: 165px;
+  margin-bottom: 155px;
+}
+
+.middle__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.middle__left {
+  width: 445px;
+  min-height: 313px;
+  margin-right: 90px;
+}
+
+.middle__heading {
+  font-family: 'Space Mono', 'sans-serif';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.middle__text {
+  font-family: 'Lexend Deca', 'sans-serif';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.middle__link {
+  display: inline-block;
+  min-width: 180px;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 14px 43px;
+  background-color: #FCB72B;
+}
+
+.middle__link:hover {
+  color: #FCB72B;
+  background-color: #FFFFFF;
+}
+
+.middle__right {
+  width: 747px;
+  height: 498px;
+  position: relative;
+}
+
+.middle__right::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 734px;
+  height: 150px;
+  background-image: url("./../image/right-strelka.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translate(-61px, 348px);
+          transform: translate(-61px, 348px);
+}
+
+.middle__right::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 445px;
+  height: 445px;
+  background-image: url("./../../image/middle-oval.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translateX(64px);
+          transform: translateX(64px);
+}
+
+.middle__right-image {
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */
