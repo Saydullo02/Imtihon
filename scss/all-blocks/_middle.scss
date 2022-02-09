@@ -60,30 +60,31 @@
         height:auto;
         position: relative;
         
-        // &::before{
-        //     position: absolute;
-        //     content: "";
-        //     width: 650px;
-        //     height: 150px;
-        //     background-image: url("./../image/right-strelka.svg"),;
-        //     background-repeat: no-repeat;
-        //     background-size: contain;
-        //     transform: translate(-61px, 348px);
-            
-        // }
+        &::before{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 650px;
+            height: 150px;
+            background-image: url("./../image/right-strelka.svg"),;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transform: translate(-61px, 348px);   
+        }
         
         // &::after{
         //     position: absolute;
+        //     display: inline-block;
         //     content: "";
         //     width: 445px;
         //     height: 445px;
-        //     background-image: url("./../../image/middle-oval.svg");
+        //     background-color: grey;
+        //     border-radius: 50%;
         //     background-repeat: no-repeat;
-
             
         // }
     }
-
+    
     &__bottom{
         width: 747px;
         height: auto;
@@ -96,7 +97,7 @@
         object-fit: contain;
         object-position: center;
     }
-
+    
     &__left-image{
         width: 445px;
         height: 445px;
@@ -104,7 +105,7 @@
         object-fit: contain;
         object-position: center;
     }
-
+    
     &__bottom-image{
         width: 445px;
         height: 445px;
@@ -146,9 +147,9 @@
     &__bottom-list2{
         margin-right: 220px;
     }
-
-   
-
+    
+    
+    
 }
 
 
